@@ -19,7 +19,7 @@ body {
   border-radius: 5px;
   text-align: center;
   margin: 0 auto;
-  box-shadow: 0 2px 1px black;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.7);
 }
 
 #screen {
@@ -66,7 +66,7 @@ button {
   border: none;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px black;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
   font-size: 1.5em;
 }
 
@@ -109,10 +109,43 @@ button#decimal {
   text-align: center;
   font-size: 4em;
   margin: 75px 0px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
 }
+
+#description {
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 1.35em;
+  line-height: 30px;
+  text-align: justify;
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: #FF7043;
+  padding: 25px;
+  margin-top: 50px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+
+#description a {
+  text-decoration: none;
+  color: #B71C1C;
+  transition: color 0.5s ease;
+}
+
+#description a:hover {
+  color: white;
+}
+
+
 
 @media (max-width: 450px) {
   #header {
-    font-size: 2em;
+    font-size: 3em;
+  }
+
+  #description {
+    width: 100%
+    line-height: 20px;
   }
 }

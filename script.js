@@ -153,3 +153,58 @@ function checkLength(elem) {
     }, 1000);
   }
 }
+
+document.onkeypress = function (e) {
+  switch (e.keyCode) {
+    case 48:
+      zeroButton();
+      break;
+    case 49:
+      oneButton();
+      break;
+    case 50:
+      twoButton();
+      break;
+    case 51:
+      threeButton();
+      break;
+    case 52:
+      fourButton();
+      break;
+    case 53:
+      fiveButton();
+      break;
+    case 54:
+      sixButton();
+      break;
+    case 55:
+      sevenButton();
+      break;
+    case 56:
+      eightButton();
+      break;
+    case 57:
+      nineButton();
+      break;
+    case 43:
+      plus();
+      break;
+    case 45:
+      minus();
+      break;
+    case 42:
+      mult();
+      break;
+    case 47:
+      divi();
+      break;
+    case 99:
+      allClearButton();
+      break;
+    case 13:
+      equalsButton();
+      break;
+    default:
+      break;
+  }
+}
