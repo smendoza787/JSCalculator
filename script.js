@@ -107,7 +107,7 @@ function divi() {
 
 function equalsButton() {
   if (expression) {
-    var answer = math.eval(expression);
+    var answer = math.eval(screenDisplay.textContent);
     clearBox('screenDisplay');
     expression = "";
     isDone = true;

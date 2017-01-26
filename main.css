@@ -104,7 +104,15 @@ button#decimal {
 }
 
 #header {
+  font-family: 'Comfortaa', sans-serif;
+  color: white;
   text-align: center;
   font-size: 4em;
   margin: 75px 0px;
+}
+
+@media (max-width: 450px) {
+  #header {
+    font-size: 2em;
+  }
 }
