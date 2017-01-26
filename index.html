@@ -4,52 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Russo+One|Comfortaa|Ubuntu+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Ubuntu+Mono|VT323|Bungee" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./main.css">
   <title>JavaScript Calculator</title>
 </head>
 <body>
   <h1 id="header">JavaScript Calculator</h1>
-  <div class="calculator">
-    <div id="screen">
-      <h1 id="screenDisplay"></h1>
-      <h3 id="errorMsg"></h3>
+  <div class="app">
+    <div class="calculator">
+      <div id="screen">
+        <h1 id="screenDisplay"></h1>
+        <h3 id="errorMsg"></h3>
+      </div>
+      <div class="buttons">
+        <button onClick="allClearButton()" id="allclear" >C</button>
+        <button onClick="divi()" id="divide" class="operator">÷</button>
+        <button onClick="mult()" id="mult" class="operator">x</button><br />
+        <button onClick="sevenButton()" id="seven" >7</button>
+        <button onClick="eightButton()" id="eight" >8</button>
+        <button onClick="nineButton()" id="nine" >9</button>
+        <button onClick="minus()" class="operator">-</button><br />
+        <button onClick="fourButton()" id="four" >4</button>
+        <button onClick="fiveButton()" id="five" >5</button>
+        <button onClick="sixButton()" id="six" >6</button>
+        <button onClick="plus()" id="plus" class="operator">+</button><br />
+        <button onClick="oneButton()" id="one" >1</button>
+        <button onClick="twoButton()" id="two" >2</button>
+        <button onClick="threeButton()" id="three">3</button><br />
+        <button onClick="zeroButton()" id="zero" >0</button>
+        <button onClick="decimalButton()" id="decimal" >.</button>
+        <button onClick="equalsButton()" id="equals" class="operator">=</button>
+      </div>
     </div>
-    <div class="buttons">
-      <button onClick="allClearButton()" id="allclear" >C</button>
-      <button onClick="divi()" id="divide" class="operator">÷</button>
-      <button onClick="mult()" id="mult" class="operator">x</button><br />
-      <button onClick="sevenButton()" id="seven" >7</button>
-      <button onClick="eightButton()" id="eight" >8</button>
-      <button onClick="nineButton()" id="nine" >9</button>
-      <button onClick="minus()" class="operator">-</button><br />
-      <button onClick="fourButton()" id="four" >4</button>
-      <button onClick="fiveButton()" id="five" >5</button>
-      <button onClick="sixButton()" id="six" >6</button>
-      <button onClick="plus()" id="plus" class="operator">+</button><br />
-      <button onClick="oneButton()" id="one" >1</button>
-      <button onClick="twoButton()" id="two" >2</button>
-      <button onClick="threeButton()" id="three">3</button><br />
-      <button onClick="zeroButton()" id="zero" >0</button>
-      <button onClick="decimalButton()" id="decimal" >.</button>
-      <button onClick="equalsButton()" id="equals" class="operator">=</button>
+    <div id="description">
+      <div class="social">
+        <a href="https://github.com/smendoza787/JSCalculator" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+        <a href="http://smendoza.me/" target="_blank"><i class="fa fa-user fa-3x" aria-hidden="true"></i></a>
+        <a href="http://twitter.com/swergi0/" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      </div>
+      <p class="descriptionText">
+        This is a simple calculator I made using the
+        <a href="http://mathjs.org/" target="_blank">Math.js</a> library. I plan on doing a solid refactor of the
+        math functionality and writing out my own functions, I was just eager to
+        hack something together so I could go on and learn more subjects! With this
+        project I implemented:
+          <ul class="learned">
+            <li>Switch Statements</li>
+            <li>Click Handlers</li>
+            <li>Keyboard Event Handlers</li>
+            <li>DOM Manipulation</li>
+            <li>CSS Gradients</li>
+            <li>and a plethora of shadows!</li>
+          </ul>
+      </p>
     </div>
-  </div>
-  <div id="description">
-    <p class="descriptionText">
-      This is a simple calculator I made using the
-      <a href="http://mathjs.org/" target="_blank">Math.js</a> library. I plan on doing a solid refactor of the
-      math functionality and writing out my own functions, I was just eager to
-      hack something together so I could go on and learn more subjects! With this
-      project I implemented:
-        <ul class="learned">
-          <li>Switch Statements</li>
-          <li>Event Handlers</li>
-          <li>DOM Manipulation</li>
-          <li>CSS Gradients</li>
-          <li>and a plethora of shadows!</li>
-        </ul>
-    </p>
   </div>
 
   <script
