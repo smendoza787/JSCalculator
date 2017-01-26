@@ -9,33 +9,32 @@
 </head>
 <body>
   <div class="calculator">
-    <div id="screen"></div>
+    <div id="screen">
+      <h1 id="screenDisplay"></h1>
+    </div>
     <div class="buttons">
-      <button id="allclear" value="">AC</button>
-      <button id="clearentry" value="">CE</button>
-      <button id="" value="/">÷</button>
-      <button id="" value="*">x</button><br />
-      <button id="seven" value="7">7</button>
-      <button id="eight" value="8">8</button>
-      <button id="nine" value="9">9</button>
-      <button id="" value="-">-</button><br />
-      <button id="four" value="4">4</button>
-      <button id="five" value="5">5</button>
-      <button id="six" value="6">6</button>
-      <button id="plus" value="+">+</button><br />
-      <button id="one" value="1">1</button>
-      <button id="two" value="2">2</button>
-      <button id="three" value="3">3</button>
-      <button id="equals" value="">=</button><br />
-      <button id="zero" value="0">0</button>
-      <button id="" value=".">.</button>
+      <button onClick="allClearButton()" id="allclear" >C</button>
+      <button onClick="divi()" id="divide" class="operator">÷</button>
+      <button onClick="mult()" id="mult" class="operator">x</button><br />
+      <button onClick="sevenButton()" id="seven" >7</button>
+      <button onClick="eightButton()" id="eight" >8</button>
+      <button onClick="nineButton()" id="nine" >9</button>
+      <button onClick="minus()" class="operator">-</button><br />
+      <button onClick="fourButton()" id="four" >4</button>
+      <button onClick="fiveButton()" id="five" >5</button>
+      <button onClick="sixButton()" id="six" >6</button>
+      <button onClick="plus()" id="plus" class="operator">+</button><br />
+      <button onClick="oneButton()" id="one" >1</button>
+      <button onClick="twoButton()" id="two" >2</button>
+      <button onClick="threeButton()" id="three">3</button><br />
+      <button onClick="zeroButton()" id="zero" >0</button>
+      <button onClick="decimalButton()" id="decimal" >.</button>
+      <button onClick="equalsButton()" id="equals" class="operator">=</button>
     </div>
   </div>
 
   <script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.9.0/math.min.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

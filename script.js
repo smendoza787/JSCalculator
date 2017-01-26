@@ -1,65 +1,77 @@
-$(function () {
-  var result = 0;
-  var operator = false;
+var screen = document.getElementById('screenDisplay');
 
+function oneButton() {
+  screen.append('1');
+}
 
-  $('#equals').on('click', function () {
-    isDone = true;
-  });
+function twoButton() {
+  screen.append('2');
+}
 
-  $('#plus').on('click', function () {
-    operator = true;
-  });
+function threeButton() {
+  screen.append('3');
+}
 
-  $('#zero').on('click', function () {
+function fourButton() {
+  screen.append('4');
+}
 
-    if (operator === false) {
-      $('<h1>0</h1>').appendTo('#screen');
-    } else {
-      $('#screen').empty();
-      $('<h1>0</h1>').appendTo('#screen');
-      operator = false;
-    }
+function fiveButton() {
+  screen.append('5');
+}
 
-  });
+function sixButton() {
+  screen.append('6');
+}
 
-  $('#one').on('click', function () {
-    $('<h1>1</h1>').appendTo('#screen');
-  });
+function sevenButton() {
+  screen.append('7');
+}
 
-  $('#two').on('click', function () {
-    $('<h1>2</h1>').appendTo('#screen');
-  });
+function eightButton() {
+  screen.append('8');
+}
 
-  $('#three').on('click', function () {
-    $('<h1>3</h1>').appendTo('#screen');
-  });
+function nineButton() {
+  screen.append('9');
+}
 
-  $('#four').on('click', function () {
-    $('<h1>4</h1>').appendTo('#screen');
-  });
+function zeroButton() {
+  screen.append('0');
+}
 
-  $('#five').on('click', function () {
-    $('<h1>5</h1>').appendTo('#screen');
-  });
-  $('#six').on('click', function () {
-    $('<h1>6</h1>').appendTo('#screen');
-  });
+// operator buttons
 
-  $('#seven').on('click', function () {
-    $('<h1>7</h1>').appendTo('#screen');
-  });
+function plus() {
+  screen.append('+');
+}
 
-  $('#eight').on('click', function () {
-    $('<h1>8</h1>').appendTo('#screen');
-  });
+function minus() {
+  screen.append('-');
+}
 
-  $('#nine').on('click', function () {
-    $('<h1>9</h1>').appendTo('#screen');
-  });
+function mult() {
+  screen.append('*');
+}
 
-  $('#allclear').on('click', function () {
-    $('#screen').empty();
-  });
+function divi() {
+  screen.append('/');
+}
 
-});
+function equalsButton() {
+  var answer = math.eval(screen.textContent);
+  clearBox('screenDisplay');
+  screen.append(answer);
+}
+
+function decimalButton() {
+  screen.append('.');
+}
+
+function allClearButton() {
+  clearBox('screenDisplay');
+}
+
+function clearBox(elem) {
+  document.getElementById(elem).innerHTML = "";
+}
