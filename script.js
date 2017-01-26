@@ -146,6 +146,7 @@ function ifDoneOper() {
 function checkLength(elem) {
   if (elem.innerHTML.length > 9) {
     clearBox('screenDisplay');
+    expression = "";
     error.append('TOO MANY DIGITS');
     setTimeout(function() {
       clearBox('errorMsg');
