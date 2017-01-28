@@ -4,40 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Ubuntu+Mono|VT323|Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Overpass+Mono|VT323|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./main.css">
   <title>JavaScript Calculator</title>
 </head>
 <body>
-  <h1 id="header">JavaScript Calculator</h1>
+  <h1 class="header">JavaScript Calculator</h1>
   <div class="app">
-    <div class="calculator">
-      <div id="screen">
-        <h1 id="screenDisplay"></h1>
-        <h3 id="errorMsg"></h3>
-      </div>
-      <div class="buttons">
-        <button onClick="allClearButton()" id="allclear" >C</button>
-        <button onClick="divi()" id="divide" class="operator">÷</button>
-        <button onClick="mult()" id="mult" class="operator">x</button><br />
-        <button onClick="sevenButton()" id="seven" >7</button>
-        <button onClick="eightButton()" id="eight" >8</button>
-        <button onClick="nineButton()" id="nine" >9</button>
-        <button onClick="minus()" class="operator">-</button><br />
-        <button onClick="fourButton()" id="four" >4</button>
-        <button onClick="fiveButton()" id="five" >5</button>
-        <button onClick="sixButton()" id="six" >6</button>
-        <button onClick="plus()" id="plus" class="operator">+</button><br />
-        <button onClick="oneButton()" id="one" >1</button>
-        <button onClick="twoButton()" id="two" >2</button>
-        <button onClick="threeButton()" id="three">3</button><br />
-        <button onClick="zeroButton()" id="zero" >0</button>
-        <button onClick="decimalButton()" id="decimal" >.</button>
-        <button onClick="equalsButton()" id="equals" class="operator">=</button>
+    <div class="calcSection">
+      <div class="calculator">
+        <div id="screen">
+          <h1 id="screenDisplay"></h1>
+          <h3 id="errorMsg"></h3>
+        </div>
+        <div class="buttons">
+          <button onClick="allClearButton()" id="allclear" >C</button>
+          <button onClick="divi()" id="divide" class="operator">÷</button>
+          <button onClick="mult()" id="mult" class="operator">x</button><br />
+          <button onClick="sevenButton()" id="seven" >7</button>
+          <button onClick="eightButton()" id="eight" >8</button>
+          <button onClick="nineButton()" id="nine" >9</button>
+          <button onClick="minus()" class="operator">-</button><br />
+          <button onClick="fourButton()" id="four" >4</button>
+          <button onClick="fiveButton()" id="five" >5</button>
+          <button onClick="sixButton()" id="six" >6</button>
+          <button onClick="plus()" id="plus" class="operator">+</button><br />
+          <button onClick="oneButton()" id="one" >1</button>
+          <button onClick="twoButton()" id="two" >2</button>
+          <button onClick="threeButton()" id="three">3</button><br />
+          <button onClick="zeroButton()" id="zero" >0</button>
+          <button onClick="decimalButton()" id="decimal" >.</button>
+          <button onClick="equalsButton()" id="equals" class="operator">=</button>
+        </div>
       </div>
     </div>
-    <div id="description">
+    <div class="description">
       <p class="descriptionText">
         This is a simple calculator I made using the
         <a href="http://mathjs.org/" target="_blank">Math.js</a> library. I plan on doing a solid refactor of the

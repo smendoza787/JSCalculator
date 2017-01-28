@@ -6,6 +6,8 @@ body {
   background-color: #4CAF50;
 }
 
+/* Calc Stuff */
+
 .calculator {
   background-color: #212121;
   width: 100%;
@@ -47,6 +49,8 @@ body {
   font-family: 'VT323', sans-serif;
 }
 
+/* Button Styling */
+
 .buttons {
   background-color: #616161;
   width: 100%;
@@ -55,8 +59,6 @@ body {
   margin-top: 10px;
   border-radius: 5px;
 }
-
-/* Button Styling */
 
 button {
   width: 50px;
@@ -94,6 +96,8 @@ button#equals {
   position: relative;
   top: -60px;
   left: -1px;
+  background-color: #212121;
+  color: white;
 }
 
 button#zero,
@@ -107,55 +111,56 @@ button#decimal {
   color: black;
 }
 
-#header {
-  font-family: 'Fredoka One', sans-serif;
+.header {
+  font-family: 'Coming Soon', sans-serif;
   font-weight: 100;
   color: white;
   text-align: center;
   font-size: 4em;
-  margin: 75px 0px;
+  margin: 35px;
   text-shadow: 0 2px 5px rgba(0,0,0,0.7);
 }
 
-#description {
-  font-family: 'Ubuntu Mono', sans-serif;
+.description {
+  font-family: 'Overpass Mono', sans-serif;
   line-height: 30px;
   text-align: justify;
-  width: 100%
-  margin: 0 auto 25px auto;
-  background-color: #236C6C;
-  border-radius: 15px;
+  background-color: #212121;
   color: white;
   box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-top: 50px;
 }
 
-#description a {
+.description a {
   text-decoration: none;
   color: #B2FF59;
   transition: color 0.5s ease;
 }
 
-#description a:hover {
+.description a:hover {
   color: #9E9E9E;
 }
 
 .social {
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
 }
 
 
 @media (max-width: 450px) {
-  #header {
+  .header {
     font-size: 3em;
   }
 
-  #description {
+  .description {
     line-height: 15px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 975px) {
   .app {
     display: flex;
     align-items: center;
@@ -164,10 +169,11 @@ button#decimal {
     margin: 0 auto;
   }
 
-  #description {
+  .description {
     margin: 0;
-    width: 425px;
+    width: 600px;
     padding: 30px;
+    border-radius: 5px;
   }
 
   .calculator {
